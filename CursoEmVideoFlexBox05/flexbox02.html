@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex wrap</title>
+    <style>
+        /* configuraçoes possiveis..
+        FLEX WRAP por padrao ja vem configurado : nowrap (nao empacote/encapsular)--nao vai quebrar os conteudos
+        na hora que mover(diminuir) o PAI o comportamento nao vai alterar em nada nos filhos
+        ... mas o encolhimento de dentro do flexbos , os itens no casos, vai depender do conteudo dentro deles
+        nowrap = faça com que os itens dentro nao saiam do padrao que eu estipulei
+
+        */
+        /*
+        FLEX-WRAP: WRAP;
+        .. vai quebrar ele no sentido do eixo transversal(cross-axis) , o ultimo elemento vai pra baixo no momento de encolher o conteiner
+
+        
+        */
+        /*
+        FLEX-WRAP:WRAP:REVERSR;
+        ... no memento que vai encolhendo a tela o ultimo elemento vai para cima: . .;
+        */
+        div.conteiner{
+            background-color: lightblue;
+            display: flex;
+          /*  flex-direction: row;*/
+          /*  flex-wrap: wrap-reverse;/*nowrap...nao quebra-encolhe ate o maximo do conteudo*/
+                            /*wrap... o conteudo ao encolher joga para baixo o ultimo bloco(div)*/
+                            /*wrap-reverse... o conteudo ao encolher joga o ultimo bloco para cima*/
+            flex-flow: row nowrap;/*este aqui eu junto 2 ao mesmo tempo*//*e recomendado este no lugar dos 2*/
+                                  /* se deixar .. row wrap= vai aguentar ate chegar o limite de conteudo e depois vai quebrar*/
+                                  
+
+
+        }
+        div.item{
+            background-color: lightcoral;
+            border: 1px solid black;
+            text-align: center;
+            /*atenção ... felx: auto; so funciona no filho e nao no pai...Se deixar ele, o mesmo nao permite que tenha espaço em branco dentro*/
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="conteier">
+        <div class="item">EXEMPLO DE BLOCO A</div>
+        <div class="item">EXEMPLO DE BLOCO B</div>
+        <div class="item">EXEMPLO DE BLOCO C</div>
+        <div class="item">EXEMPLO DE BLOCO D</div>
+        <div class="item">EXEMPLO DE BLOCO E</div>
+
+    </div>
+
+
+    
+</body>
+</html>

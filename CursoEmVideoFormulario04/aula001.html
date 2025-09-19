@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="">br
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        *{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>meu primeiro formulario</h1>
+    <form action="cad.php" autocomplete="off" method="post">
+
+        
+
+        <p><label for="inome">Nome:</label> 
+            <!-- Este e um label pra quem (for) para o ID(id="inome") -->
+            <input type="text" name="nome" id="inome"> </p>
+
+        <p><label for="isobrenome">Função:</label>
+            
+            <input type="text" nonce="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="vai te embora"></p>
+
+        <!-- metodos de envio de formulario sao : method="get" e "post"... -->
+        <!-- por padrao sem declarar nada , ja e o GET -->
+        <!-- o GET ... aparecer la no navegador o que foi digitado -->
+        <!-- o POST ... nao aparece nada na url , mas no inspecionar aparece la em network o que foi digitado-->
+        <!-- apenas em HTTPS tem segurança-->
+        <!-- quando voce deseja que o link seja compartilhado usa-se GET-->
+        <!-- so pode ser envia ate 3mil byt por GET ... que seria 3 mil letras -->
+        <!-- campos sensiveis : cpf etc..-->
+        <!-- usa-se o POST : dados sensiveis,HTTPS(numeros e senhas , cartao ), + de 3 mil byte,envio de arquivo-->
+        
+
+
+
+    </form>
+    
+</body>
+</html>

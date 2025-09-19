@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteudo flexbox</title>
+    <link rel="stylesheet" href="flexbox09.css">
+</head>
+<body>
+    <header>
+        <h1>exemplo de conteudo flexivel</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nobis commodi. Voluptates cumque sapiente, molestias enim aperiam perferendis inventore, fugit repellendus totam delectus non, eligendi dignissimos porro placeat explicabo omnis?</p>
+    </header>
+    <main>
+        <!-- vai ter 2 secoes -->
+         <section class="flex-content">
+            <!-- 2 artigo-- texto com imagem e texto com video-->
+             <article class="midia-text"> <!-- a midia em cima e texto em baixo, na hora de quebrar (encolher)-->
+                <div class="text">
+                    <h2>Elemento midia->Text</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam velit voluptatibus cumque esse ad aut, nobis a. Quod obcaecati voluptatum minus fugiat repellendus blanditiis ratione perferendis incidunt, dignissimos quis debitis?</p>
+
+                </div>
+                <div class="midia">
+                    <img src="img/img_400x280.jpg" alt="criando site flex-box">
+
+                </div>
+
+             </article>
+             <article class="text-media"><!-- texto em cima e midia abaixo,na hora de quebrar (encolher)-->
+                <div class="text">
+                    <h2>Elemento Text-> midia</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat aperiam id, eos qui mollitia blanditiis ad ab, omnis officiis impedit accusantium sed sunt amet in autem porro rem veritatis illo.</p>
+
+                </div>
+                <div class="midia">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YX3KTQzyDfg?si=-ur-geNkkMGWsKXM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                </div>
+                
+
+             </article>
+
+
+         </section>
+         <section class="normal">
+            <h2>conteudo normal</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptates, facilis itaque voluptatum quidem odio dicta voluptatem placeat magnam, sequi assumenda pariatur nihil ducimus ipsam molestiae quae! Cum, culpa ut!</p>
+         </section>
+
+    </main>
+    
+</body>
+</html>

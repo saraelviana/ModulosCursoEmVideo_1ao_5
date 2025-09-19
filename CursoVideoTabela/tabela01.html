@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        table{
+            width: 400px;/*largura de cada bloco da tabela*/
+            border-collapse: collapse;/*por padrao fica (separate) - com espacinho entre elas, mas tem que ser excel*/
+        }
+        td{
+            border: 1px black;/*assim  ( td ) voce coloca a borda em cada item da tabela*/
+            padding: 9px;/*aumentando , esta muito grudado*/
+
+        }
+        tr{
+            /*e a linha inteira*/
+        }
+        tr.linha{
+            /*vamos trabalhar a linha com a class*/
+            background-color: rgba(0, 0, 0, 0.034);/*cor da linha */
+        }
+        td{
+            /*e a linha inteira*/
+        }
+        td.dado{
+            background-color: blueviolet;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>minha primeira tabela</h1>
+    <!-- a 1 coisa e criar a tabela usando a TAG table-->
+     <!--as tabelas mas simples seguem esta hierarqui
+     * table = tabela
+     ** table row = linha de tabelas
+     *** table header = cabeçalho de tabela
+     **** table date = dado da tabela
+
+     Se a hierarquia nao for obdecida o dado vai aparecer ou antes ou depois da tabela assim:
+     <tr> 3 linha da tabela-->
+     <!--   <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+            Dado
+            - Este "Dado" sozinho , vai aparecer em qualquer lugar da tabela
+
+        </tr>-->
+
+     
+     <table><!--ela vai delimitar a minha tabela-->
+        <tr> <!--primeira linha da tabela-->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td> <!--entao na primeira linha tem A1 - B1 - C1 (igual excel)-->
+
+        </tr>
+        <!-- agora vamos para segunda linha-->
+         <tr class="linha"> <!-- segunda linha da tabela-->
+            <td>A2</td>
+            <td class="dado">B2</td>
+            <td>C3</td> <!--entao na primeira linha tem A2 - B2 - C3 (igual excel)-->
+
+        </tr>
+        <!-- agora vamos para 3 linha-->
+         <tr> <!-- 3 linha da tabela-->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td> <!--entao na primeira linha tem A3 - B3 - C3 (igual excel)-->
+
+        </tr>
+        <!-- agora 4 linha-->
+         <tr> <!--4 linha da tabela-->
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td> <!--entao na primeira linha tem A4 - B4 - C4 (igual excel)-->
+
+        </tr>
+
+
+     </table>
+    
+</body>
+</html>

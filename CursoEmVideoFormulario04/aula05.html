@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>exemplo de formulario</h1>
+    <form action="cad.php" autocomplete="on" method="post">
+        <p>
+            <input type="submit" value="tchau">
+            <input type="reset" value="limpar">
+        </p>
+        <p>
+            <label for="inivel">nivel</label>
+            <input type="range" name="nivel" id="inivel" min="2" max="10">
+
+        </p>
+        <p>
+            <label for="foto"> foto usuario</label>
+            <input type="file" name="foto" id="ifoto">
+            <!-- neste nput type="image... voce nao deixa o visitante escolher -->
+            <!-- quando voce usar o metodo de envio de arquivo ,nao se pode usar o method="get" -->
+        </p>
+
+
+
+    </form>
+
+    
+</body>
+</html>

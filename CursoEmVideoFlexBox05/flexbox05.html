@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexible-box-module()</title>
+
+    <style>
+        /*
+        propriedade : order
+        Todo item DENTRO do flex-box, vai ter order ZERO por padrao
+
+        propriedade : 
+        align-self
+        Ele vai funcionar no eixo transversal (cross-axis)
+        * o primeiro valor e : auto ... ele vai herdar as caraceristicas do alinhamento vertical seu pai,seja qual for...[ o que estiver confugurado no pai]
+        
+        flex-start
+        Que e o alinhamento perto do cross-start
+
+        flex-end
+        Alinhamento grudado no cross-end
+
+        center
+        Alinhar pelo centro
+
+        stretch
+        Ele vai dar uma puxada para que ele ocupe o espaço inteiro do eixo transversal
+        
+        */
+
+        /*
+        
+        dentro do cross-axis tudo isso e possivel  */
+        div.conteiner{
+            background-color: lightcoral;
+            display: flex;
+            flex-flow: row wrap;
+            height: 400px;/*esticou tudo , o conteiner puxou os itens, para resolver=align-items: flex-start;*/
+            align-items: flex-start;/*assim os itens ficam normal e o fundo permanece esticado*/
+
+        }
+        div.item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        div#i1{
+            
+            
+        }
+        div#i2{
+            
+        }
+        div#i3{
+            align-self: flex-end;/*apenas este desceu , os outros permanecem la em cima*/
+        }
+        div#i4{
+            
+        }
+        div#i5{
+            align-self: center;
+        }
+        div#i6{
+            
+        }
+        div#i7{
+            align-self: stretch;/*esticou*/
+            
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="item" id="i1">a</div>
+        <div class="item" id="i2">b</div>
+        <div class="item" id="i3">c</div>
+        <div class="item" id="i4">d</div>
+        <div class="item" id="i5">e</div>
+        <div class="item" id="i6">f</div>
+        <div class="item" id="i7">g</div>
+
+    </div>
+
+    
+</body>
+</html>

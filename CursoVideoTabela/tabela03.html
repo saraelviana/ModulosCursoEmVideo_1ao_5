@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABELA GRANDEt</title>
+</head>
+<style>
+    body{
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+    table{
+        /*vamos trabalhar para congelar a informação no topo enquanto descemos com os dados*/
+        width: 500px;
+        border-collapse: collapse;
+        position: relative;
+    }
+    caption{
+        background-color: aquamarine;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+
+    }
+    th,td {/*separa por virgula da os 2*/
+        border: 1px solid black;
+
+    }
+    
+    thead, tfoot{
+       background-color: rgb(10, 10, 10);
+       color: white;
+
+    }
+    thead > tr > th{
+        /*o TR que esta no TH do cabeçalho */
+        position: sticky;/* colavel - grudavel*/
+        top: -1px;/*quando eu digo isso , estou dizendo que ele vai colar na parte 0*/
+        background-color: rgb(10, 10, 10);/*agora sim , sem isso nao aparece a informação do cabeçalho*/
+
+
+        
+    }
+    thead tr:nth-child(even){
+        /*par*/
+        background-color: crimson;
+        font-weight: bold;
+    }
+    thead tr:nth-child(odd){
+        /*impar*/
+        background-color: darksalmon;
+        text-decoration: underline;
+    }
+/*assim e  melhor h-child(even) e com nth-child(odd) --- trabalha separadas*/
+
+
+    /*thead tr:nth-child(2n){
+        /*aqui e uma pseudo class (nth-child())-- 2n ela pula de 2 em 2  */
+        /* nth-child( ) - odd = a palavra impar -- even = par */
+       /* background-color: burlywood;*/
+
+    td.num{
+        text-align: center;
+
+    }
+
+
+
+</style>
+<body>
+    <!-- TABELA GRANDE
+
+    * table = tabela
+    * caption = titulo da tabel
+    ** thead = corpo da tabela
+               - tr - td - th
+    *** tbody = corpo da tabela
+               - tr - td - th
+    **** tfoot = rodape da tabela
+               - tr - td - th
+    
+    -->
+
+
+    <TAble>
+        <caption>
+            <!-- no caption eu nao posso usar nem TR ou TD -->
+             população do local
+        </caption>
+        <thead><!-- a cabeça da tabela-->
+            <tr>
+                <th scope="col">estado</th><!-- col = coluna -->
+                <th scope="col">população</th> 
+                <!-- Para eu dizer que ESTADO  e o titulo desta colouna uso - scope="" serve para  -->
+                 <!-- o dado esta na coluna e nao na linha (col).. la no foother e diferente-->
+
+            </tr>
+           
+        </thead>
+        <tbody><!-- no corpo a tabela-->
+            <tr>
+                <td>sao paulo</td>
+                <td class="num">45 25 45</td>
+            </tr>
+            <tr>
+                <td>manaus</td>
+                <td class="num">85 45</td>
+            </tr>
+            <tr>
+                <td>rio preto</td>
+                <td  class="num">12 14</td>
+            </tr>
+
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">total de habitantes</th><!--este e um titulo -->
+                <td><strong>0000000</strong></td><!-- td e um dado nao esquece-->
+                <!-- esta na mesma linha,entao e cope="row" -->
+            </tr>
+
+
+        </tfoot>
+    </TAble>
+    
+</body>
+</html>

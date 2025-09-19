@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alinhamento vertical</title>
+    <style>
+        /*quando voce for centralizar verticalmente , tem que ter um conteiner e um conteudo*/
+        section#conteiner{
+            background-image: url();
+            position: relative;
+            height: 500px;
+            padding: 10px;/*com este pad- ficou contornando o amarelo , dando a aparencia de menu,ficou legal,vamos mudar*/
+            background-color: darkred;
+
+        }
+        article#conteudo{
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            left: 100px;
+            top: 200px;
+
+            transform: translate(20px 20px);
+            /*transform: translate(20px 20px) */
+
+            /*margin: auto; so serve para alinhamento HORIZONTAL- o exercicio e vertical*/
+
+            /*position: absolute;-- quando se usa esta TAG pode se trabalhar de outra maneira assim:
+            left: px;
+            top: px;
+            assim voce modela ela Vertival Horizontal -- uma CRUZ -- 
+
+            */
+
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <section id="conteiner">
+        <article id="conteudo">
+
+        </article>
+    </section>
+
+    
+</body>
+</html>

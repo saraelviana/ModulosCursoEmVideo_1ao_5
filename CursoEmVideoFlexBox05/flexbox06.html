@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-BASIC/flex-ietem</title>
+
+    <style>
+        /*
+        ESTAMOS TRABALHANDO O ITEM E NAO O - CONTEINER -
+
+        Todo item DENTRO do flex-box, vai ter order ZERO por padrao
+        *** flex-conteiner e o fundo 
+        *** flex-item sao os itens dentro do conteiner
+        */
+        /*
+        trabalhando o  tamanho do flex-item
+        *** propriedade FLEX-BASIC 
+        flex-basic: auto;
+        sempre vem por padrao VALOR AUTO
+        -- o tamanho e ditado pelo tamanho do conteudo dentro (auto)
+
+        vamos substituir o flex-basic: 200px (um tamanho)-- cada item tera este tamanho
+        flex-shrink:1; -- por padrao
+        1 = significa: que pode encolher
+        0 = significa: que nao pode encolher
+
+        flex-grow:0; -- por padrao
+        0 = significa que nao pode crescer
+        1 = significa que pode crescer tambem
+
+        exemplo
+        flex-shrink:1; .. pode encolher
+        flex-grow:1;.. agora os elementos pode crescer( quando extendidos[conteiner] ao maximo)
+        ** desta maneira todos os elementos estao no modo ELASTICO **
+        
+
+
+        
+        */
+        div.conteiner{
+            background-color: lightcoral;
+            display: flex;
+            flex-flow: row nowrap; /*eixo principal deitado*/
+           
+        }
+        div.item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            /*flex-basic:suto--- mesmo eu nao colocando ele ja esta inserido*/
+            flex-basis: 150px;/*flex-basis: 150px... todos os itens com esta medida*/
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="item">a</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
+       
+
+    </div>
+
+    
+</body>
+</html>

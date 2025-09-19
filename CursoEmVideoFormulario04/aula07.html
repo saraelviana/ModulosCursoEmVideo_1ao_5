@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>output - idade</title>
+</head>
+<body>
+    <h1>meu formulario</h1>
+    <form action="cad.php" method="post" autocomplete="on">
+    <p>
+        <label for="inum">numero</label>
+        <input type="range" name="num" id="inum" min="0" max="10" value="5"
+        oninput="ival.innerHTML=Number(inum.value)"> <!-- o valor padrao = value="5"-->
+        <output id="ival">10</output>
+
+    </p><br>
+
+    <p>
+        <label for="iiano" > em que ano voce nasceu</label>
+        <input type="number" name="ano" id="iano" min="1900" max="2025" oninput="calcIdade()">
+
+    </p>
+    <p>
+        <label for="iidade">sua idade</label> <br>
+        <output id="iidade">0</output>
+    </p>
+    
+    <p>
+        <input type="submit" value="tchau">
+        <input type="reset" value="limpar">
+    </p>
+    </form>
+    <script>
+        function calcIdade(){
+            let atual = new Date().getFullYear()
+            iidade.innerHTML=Number(atual) - Number(iano.value)
+        }
+
+    </script>
+    
+    
+</body>
+</html>

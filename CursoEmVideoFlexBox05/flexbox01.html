@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box 01</title>
+    <style>
+        body{
+
+        }
+        div.conteiner{
+            
+
+            background-color: rgb(194, 162, 123);
+            display: flex;
+
+            /*
+            conteiner-- e ele que leva a configuração principal (pai)
+            E o pai que vai levar a configuração : display: flex;
+            os filhos normalmente nao vao levar
+
+            */
+            /*
+            configuração de direção e no pai... e o flex-direction... as configuraçoes:
+            + por padrao -> 
+            fle-direction:row; row = linha (da eskerda p/ direita)
+            fle-direction:row-reverse; = linha(Os itens serao:da direita p/ eskerda )
+            fle-direction:column; (e de cima para baixo)(mas para celular)
+            fle-direction:column-reverse; 
+            
+            */
+
+            /*
+            eixo (axis)
+            main-star (lado esquerdo)- main-end(lado )
+            
+            */
+
+            /*
+            se deixar assim :
+            div.conteiner{
+            background-color: bisque;}
+            vai prevalecer apenas a cor da div item
+            mas quando colocar o flex-box 
+            todas as div.item ficaram uma do lado da outra e a cor do conteiner
+            vai aparecer. E a cor da div.item vai ficar na horizontal 
+            */
+
+        }
+        div.item{
+            background-color: rgb(129, 83, 83);
+            display: auto;
+            text-align: center;
+            /*desta forma --div.conteiner..display: flex;
+                          --div.item..display: auto;
+            tudo ja fica auto ajustado , se colocar um text-align: center;
+            vai ajustar o texto dentro da div para o cetro
+             */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="conteiner"> <!-- o pai -->
+        <div class="item">a</div> <!-- o filho -->
+        <div class="item">b</div> 
+        <div class="item">c</div> 
+        <div class="item">d</div> 
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexible-box-module(order)</title>
+
+    <style>
+        /*
+        propriedade : order
+        Todo item DENTRO do flex-box, vai ter order ZERO por padrao
+
+        propriedade : 
+        align-self
+        Ele vai funcionar no eixo transversal (cross-axis)
+        * o primeiro valor e : auto ... ele vai herdar as caraceristicas do alinhamento vertical seu pai,seja qual for...[ o que estiver confugurado no pai]
+        
+        flex-start
+        Que e o alinhamento perto do cross-start
+
+        flex-end
+        Alinhamento grudado no cross-end
+
+        center
+        Alinhar pelo centro
+
+        stretch
+        Ele vai dar uma puxada para que ele ocupe o espaço inteiro do eixo transversal
+        
+        */
+        div.conteiner{
+            background-color: lightcoral;
+            display: flex;
+            align-content: space-around;
+            height: 400px;
+            flex-flow: row wrap id="i";
+        }
+        div.item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        div#i1{
+            order: 0;
+            
+        }
+        div#i2{
+            order: 1;
+        }
+        div#i3{
+            order: -2;
+        }
+        div#i4{
+            order: 4;
+        }
+        div#i5{
+            order: 3;
+        }
+        div#i6{
+            order: 0;
+        }
+        div#i7{
+            order: 7;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="item" id="i1">a</div>
+        <div class="item" id="i2">b</div>
+        <div class="item" id="i3">c</div>
+        <div class="item" id="i4">d</div>
+        <div class="item" id="i5">e</div>
+        <div class="item" id="i6">f</div>
+        <div class="item" id="i7">g</div>
+
+    </div>
+
+    
+</body>
+</html>

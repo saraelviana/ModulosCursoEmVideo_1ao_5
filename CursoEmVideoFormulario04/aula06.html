@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>meu formularo</h1>
+    <p>
+        <label for="iest">Setor</label>
+        <select name="Setor" id="isetor">
+            <option value="-----" > selecione</option>
+            <option value="Administracao">Administracao</option>
+            <optgroup>
+                <option value="markting">markting</option>
+                <option value="RH">RH</option>
+            </optgroup>
+
+            <option value="Padaria">Panificação</option>
+            <!-- deixando elected , ja abri neste setor selecionado -->
+            <optgroup label="Padaria">
+
+                <option value="forno" >forno</option>
+                <option value="embaladora">embaladora de paes</option>
+                <option value="embaladora pao de queijo">embaladora de pao de queijo</option>
+
+            </optgroup>
+            <option value="FLV">FLV</option>
+            <optgroup>
+                <option value="detox">detox</option>
+                <option value="Fabrica de suco">Fabrica de suco</option>
+            </optgroup>
+            <option value="af">aldeia da folha</option>
+            <!-- como adicionar quando nao esta na lista-->
+             <p>
+                <label for="iprof"> profissao</label>
+                <input type="text" name="prof" id="iprof" list="lsprof">
+                <datalist id="lsprof">
+                    <option >eletrica</option>
+                    <option >mecanico</option>
+                </datalist>
+                <!-- desta maneira, voce escrever (acrescenta ) 
+                 <label for="iprof"> profissao</label>
+                <input type="text" name="prof" id="iprof">
+                -->
+                <!-- vamos dar uma opção para o usuario selecionar assim:
+                 adicionar a tag LIST = list="lsprof"
+                 da um ID para o data list assim: <datalist id="lsprof">
+                -->
+                <!--
+                se deixar assim: <option value="mecanico">mecanico</option>
+                vai aparecer para o usuario o value="mecanico">
+                
+                -->
+             </p>
+             <!-- mas qual e a difereça , option e datalist ! o datalist permite que voce acrescente algo o outro nao-->
+              <p><label for="ims">MSN</label><!-- para o usuario deixar uma msg-->
+                <!-- tem que colocar a tag=textarea -->
+                <textarea name="ms" id="imsg" cols="30" rows="10"></textarea>
+
+              </p>
+            
+             
+
+        </select>
+    </p>
+    
+</body>
+</html>

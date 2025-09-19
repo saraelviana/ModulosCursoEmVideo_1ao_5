@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="">br
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        *{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>meu primeiro formulario</h1>
+    <form action="cad.php" autocomplete="off">
+
+        <!-- autocomplete="off" ... ele que desliga a caixinha que armazena o que foi digitado anteriormente  -->
+        <!-- form action="cad.php" vai ser usado php para armazenar os dados digitados  -->
+
+        <p><label for="inome">Nome:</label> 
+            <!-- Este e um label pra quem (for) para o ID(id="inome") -->
+            <input type="text" name="nome" id="inome"> </p>
+
+        <p><label for="isobrenome">Função:</label>
+            
+            <input type="text" nonce="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="vai te embora"></p>
+
+        <!-- vamos usar as LABEL para unir o que digitado na caixa com o titulo -->
+        <!-- para funcionar o formulario em php todo formulario precisa ter um nome (name="nome") -->
+        <!-- para linguagem JS o id="nome" e mas utilizado-->
+
+
+
+    </form>
+    
+</body>
+</html>

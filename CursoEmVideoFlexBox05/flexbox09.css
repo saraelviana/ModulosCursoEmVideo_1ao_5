@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;/*a fonte da letra*/
+    font-size: 1em;/*tamanho*/
+    line-height: 1.5em;/*espaçamento entre as linhas*/
+    
+
+}
+header,section,normal{
+    padding: 20px;
+
+
+}
+p {
+    margin-bottom: 10px;
+    text-align: justify;
+    
+}
+h1,h2{
+    margin-bottom: 20px;
+    line-height: 1.2em;
+    text-align: left;
+}
+
+section.flex-content{ /*conteiner [ pai ]*/
+    background-color: rgb(165, 160, 160);
+    padding: 20px;
+    display: flex;/*aqui ,display: flex.. ja fica um do lado do outro*/
+    flex-flow: column nowrap ;
+
+
+}
+
+article.text-media{
+    display: flex;/*desta forma,display: flex; ja ficou separado , vamos continuar*/
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+article.midia-text{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+
+article > div.text{
+    border:  2px dashed blue;/*para vizualizar,depois sera anulado*/
+    flex: 1 1 500px;/*grow- shirink- basic*/
+
+}
+article > div.midia{
+    border: 2px dashed red;/*para vizualizar,depois sera anulado*/
+    flex: 1 0 400px;
+    padding: 15px;
+}
+div.midia > img{
+    display: block;
+    margin: auto;/*ajusta centralizando automaticamente*/
+    padding: 15px;
+
+}
+div.midia > iframe{
+    display: block;
+    margin: auto;/*ajusta centralizando automaticamente*/
+    width: 90%;/*para ajustar o video ao encolher*/
+
+
+}
+
+

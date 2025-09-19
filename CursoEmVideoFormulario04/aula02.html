@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <!-- opçoes de formulario -->
+     <form action="cad.php" method="post" autocomplete="on"></form>
+     <p>
+        <!-- posso usar uma DIV para fazer a caixa tambem,blz-->
+        <label for="Iusu">usuario padrao </label>
+        <input type="text" name="usu" id="Iusu" required minlength="5" maxlength="10" maxlength="15" size="10" placeholder="nome usuario" autocomplete="nickname">
+        <!-- required = requerido / obrigatorio -->
+        <!-- minlength="5" = o minimo que precisa ser digitado-->
+        <!-- maxlength="10" = e o maximo que precisa ser digitado-->
+        <!-- maxlength="15" size="10"... vai aceitar 15 letra mas o espaçamento visual e de 10 letras-->
+        <!-- placeholder="nome usuario"... uma caixa para dica de que esta solicitando do usuario-->
+        <!-- autocomplete="off"... desliga o auto complete, mas tem a outra opção assi:
+             autocomplete="on" la no form, mas usar autocomplete="" dentro do input assim: 
+             <input type="text" name="usu" id="Iusu" required minlength="5" maxlength="10" maxlength="15" size="10" placeholder="nome usuario" autocomplete="nickname" -->
+        <!-- autocomplete="current-password ... senha atual no caso -->
+        
+
+
+        
+        
+
+     </p>
+     <p>
+        <label for="Isen"> Digite sua Chave</label>
+        <input type="password" name="sen" id="Isen" required minlength="5" maxlength="8" autocomplete="current-password">
+        <input type="submit" value="tchau">
+        <input type="reset" value="limpar">
+        <input type="button" value="t">
+        
+        
+     </p>
+    
+</body>
+</html>

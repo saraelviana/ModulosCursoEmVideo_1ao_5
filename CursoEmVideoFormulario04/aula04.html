@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario botao de rodio</title>
+</head>
+<body>
+    <h1>formulario</h1>
+    <form action="cad.php" autocomplete="on" method="post">
+        <fieldset>
+            <input type="radio" name="sexo" id="isxmas" value="m"> <label for="isxmas"> masculino</label>
+            <input type="radio" name="sexo" id="isxfem" checked  value="f"> <label for="isxfem"> femenino</label>
+        </fieldset>
+        <!--
+        <fieldset>
+            <input type="radio" name="sxmas" id=""> <label for=""> masculino</label>
+            <input type="radio" name="sxfem" id=""> <label for=""> femenino</label>
+        </fieldset>
+        desta forma fica as 2 opoçoes marcadas-- esta errado so pode 1
+        -- pra corrigir, vamos entender... name="sxmas".. este e o nome da bolinha (onde se marca)
+        -- e so colocar o mesmo name nos botoes de type="radio".. assim:<input type="radio" name="sexo" id="isxmas"> <label for=""> masculino</label> e na linha de codigo seguinte o mesmo name , so o ID tem que ser diferente
+        Se eu quiser que uma das opçoes ja apareça marcado para o usuario  alterar e som fazer assim : checked
+        no <input type="radio"... nao posso colocar mais de checkd
+
+        
+        
+        -->
+
+
+        <fieldset><!-- faz uma caixa->fieldset -->
+
+            <legend>Esporte top</legend>
+            <input type="checkbox" name="esfut" id="Iesfut"><label for="Iesfut">futebbol</label> <br><!-- e uma check -->
+            <input type="checkbox" name="esbaq" id="Iesbaq"><label for="Iesbaq">basquete</label> <br>
+            <input type="checkbox" name="esnat" id="Iesnat"><label for="Iesnat">natacao</label> <br>
+            <input type="checkbox" name="esgolf" id="Iesgolf">Golfe <br> <!-- deixa para ver a diferença-->
+            <!-- desta aforma esta um do lado do outro-->
+            <!-- pra deixar um abaixo do outro basta usar <br> quebra de linha no final deles: d="Iesnat">natacao <br> -->
+            <!-- problema, no celular ele marca e nao desmarca, pois a caixinha de marca nao esta relacionada com a palavra (natacao)
+             pra resolver , evelopa com a Tag label assim:<label for="">natacao</label> -->
+            
+            
+
+
+
+
+        </fieldset>
+
+        <p>
+
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
