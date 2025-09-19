@@ -1,0 +1,39 @@
+@charset "UT-8";/*para nao ter problema com acentuação*/
+
+body{
+    background-color: rgb(82, 231, 95) ;/*funco*/
+    font-family: 'Times New Roman', Times, serif;
+
+}
+h1{
+    color:rgb(1, 63, 6) ;/*letras*/
+
+
+
+}
+h1#principal{
+    /*ID=#*/
+    text-align: center;/*centralização do texto*/
+    background-color: green;
+    color: white;
+
+}
+h2{
+    color:rgb(129, 151, 0)
+
+}
+p{
+
+}
+.basico{
+    color:rgb(6, 24, 7) ;/*letras*/
+    font-weight: bold;/*o peso da fonte em negrito*/
+}
+.avancado{
+    color:rgb(187, 73, 7) ;/*letras*/
+    font-weight: bold;/*o peso da fonte em negrito*/
+}
+.destaque{
+    background-color: rgb(212, 212, 117);/* vai ficar amarelo no fundo*/
+    
+}

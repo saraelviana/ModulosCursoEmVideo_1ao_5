@@ -1,0 +1,25 @@
+body{
+
+    background-color: rgb(208, 230, 206);
+
+}
+main{
+    /*ENQUANTO TIVER ROLAGEM LATERAL O SITE NAO ESTA RESPONSSIVO*/
+
+    background-color: rgb(214, 213, 213);/*fundo*/
+
+    /*2 tag para trabalhar a responsividade*/
+    min-width:280px ;/*medida de celular antigo pequeno*/
+    max-width: 800px;/*largura*/
+    margin: auto;/*conteudo ficara centralizado quando a tela for maior*/
+
+
+}
+img{
+    /*trabalhando a imagem*/
+    width: 100%;/*agora a imagem se adapta */
+
+}
+picture{
+
+}

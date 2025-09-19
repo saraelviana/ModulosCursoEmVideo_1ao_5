@@ -1,0 +1,25 @@
+div{
+    display: inline-block;/*tudo na mesma linha*/
+    background-color: rgb(195, 168, 221);/*fundo*/
+    border: 1px solid black;/*borda--seria -> 1 largura 1px -1 tipo solid -1 e a cor black*/
+    text-align: center;/*cebtralização*/
+    height: 200px;/*altura*/
+    width:200px ;/*largura*/
+
+
+}
+#d1{
+    background-color: blue;
+}
+#d2{
+
+}
+#d3{
+
+}
+div:hover{
+    /*neste caso esta sendo aplicado ao elemento Div--- hover (quando eu passar o mouse por cima)*/
+    background-color: yellow;
+    
+
+}

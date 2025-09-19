@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+/*zera margens geral*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*trabalhando as fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&family=Splash&display=swap');
+
+
+@font-face{
+    font-family:'android';
+    src: url('../fontes/idroid.otf');
+    font-weight:normal;
+}
+/*trabalhando as variaveis*/
+:root{
+    /*toda variavel em css começa com -- */
+    --cor0:#e5cbd6;
+    --cor1:#83e1ad;
+    --cor2:#3ddc84;
+    --cor3:#2fa866;
+    --cor4:#1a5c37;
+    --cor5:#063d1e;
+    --font-padrao:Arial,Verdana,sans-serif,helvetica;
+    --font-Destaque: 'Splash', cursive; 
+    --font-android:'android',cursive;
+    
+
+}
+
+
+body{
+    background-color:var(--cor0);/*funco*/
+    font-family: var(--font-padrao);
+    
+}
+a.externo::after{
+    /*(A)TODO LINK - (.)DA CLASSE EXTERNO - (::)DEPOIS */
+    content: '📌'; /*<!-- colocamos a class externo para colocar um simbolo nos links-->*/
+
+}
+p{
+    /*lembrando que o sentido e de ponteiro de relogio - margin: 15px 0px 15px 0px; */
+    /*pra cima - pra direita - pra baixo - pra esquerda*/
+    /*e como sao os mesmo numeros podemos deixar assim:*/
+
+    /*se deixar apenas o P ele vai altera todos, nao pode fazer assim: MAIN > P - pois tem um articlu dentro do mein*/
+
+    /*margin: 15px 0px;/*isso desgruda tudo,pois gerou margem em cima e embaixo de todos os paragrafos*/
+    /*text-align: justify;/*justificar o paragrafos*/
+     
+
+
+    
+}
+header{
+    background-image: linear-gradient(to bottom ,var(--cor2),var(--cor4));
+    min-height: 150px;/*vamos colocar uma altura minima */
+    margin-bottom: 20px;/*descolar um pouco*/
+    text-align: center; 
+    padding-top: 40px;/*pra ajustar com o margin-top: 10px do header h1*/
+    
+
+
+}
+header h1{
+    color:var(--cor0);/*letra*/
+    font-family: var(--font-Destaque);
+    margin-top: 10px;/*margem superior*/
+    margin-bottom: 20px;/*descolar um pouco o titulo que esta no header */
+    font-size: 3em;/*esta aumentando o tamanho da letra*/
+    font-weight: normal;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0,0.267);/*usar o inspecionar para desenvolver a sombra e mas facil*/
+
+
+    
+
+}
+header >p{
+    color: white;/*letra*/
+    font-family: var(--font-padrao);
+    font-size: 1.2em;/*esta aumentando o tamanho da letra*/
+    margin: auto;/*cetralizar*/
+    max-width: 500px;/*largura maxima e 500px ele se transforma em um block agora e necessita de uma margin :auto */
+    padding-left: 10px;/*pra nao ficar colado na lateral*/
+    padding-right: 10px;/*pra nao ficar colado na lateral*/
+
+}
+nav{
+    background-color: var(--cor5);/*funco*/
+    box-shadow: 0px,7px,9px,rgb(105, 104, 104);
+    
+    padding: 10px;/*aqui seria a largura do bloco, sem ele fica errado*/
+
+
+}
+nav >a{
+    /*nav e o link (a) que esta dentro de nav*/
+    color: white;/*cor da letra*/
+    padding: 10px;/*pra dar uma separada nos menus*/
+    text-decoration: none;/*sair o sublinhado*/
+    font-weight: bold;/*em negrito*/
+    border-radius: 5px;/*efeito arredondado*/
+    transition-duration: 0.8s;
+    
+
+
+}
+nav >a:hover{
+    /*nav com a pseudo class para mudar de cor ao passar o mouse*/
+    background-color: var(--cor2);/*cor para o efeito*/
+    color: var(--cor5);/*cor da letra*/
+
+}
+main{
+    background-color: white;/*funco*/
+    padding: 20px;/*pra descolar */
+    box-shadow: 0px 0px 10px black;
+    margin-bottom: 30px;/*margim em baixo*/
+
+    /*vamos arredondar apenas as bordas debaixo da direita e esquerada sejam arredondadas*/
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px ;
+
+    /*responssividade*/ /*assim o conteudo esta adaptavel falta as images*/
+    max-width: 1000px;
+    min-width: 280px;
+    margin: auto;/*em telas muito grande , vai ficar tudo no centro*/
+
+
+
+}
+main h1{
+    color: var(--cor5);
+    font-family: var(--font-android);
+    font-weight: normal;
+    font-size: 1.8em;
+
+
+}
+main h2{
+    font-family: var(--font-android);
+    font-weight: normal;
+    color: var(--cor4);/*letra*/
+    font-size: 1.5em;/*tamanho da fonte*/
+    background-image: linear-gradient(to right,var(--cor1)transparent );/*e so usar os direira esquerda em ingles*/
+    text-indent: 8px;/*indentação */
+
+
+}
+main img{
+    width: 100%;/*agora vai ficar adpatavel as imagens que estao dentro do main*/
+
+}
+main img.pequena{
+    /*desta maneira estou forçando a imagem a diminuir , quando o correto era ter criado uma img pequena*/
+
+   max-width: 350px;/*usar o maximo da imagem tem tem 400 de largura*/
+    /*atenção UMA IMG POR PADRAO ELA NAO E 1 BLOCK entao faça assim*/
+    display: block;/*aqui joguei a imagem de 50% para o centro do site*/
+    margin: auto;
+}
+main p{
+    /*todos os P dentro do main*/
+    margin: 15px,0px;
+    text-align: center;
+    text-indent: 30px;/*indentação do paragrafo*/
+    line-height: 2em;/*altura da linha e outra*/
+
+
+
+}
+main strong{
+    /*tudo que for strong*/
+    color: var(--cor3);
+    font-weight: bold;
+   /* background-color: var(--cor1);
+    padding: 2px,6px;*/
+
+}
+main a{
+    /*o A sao todos os links*/
+    text-decoration: none;/*reirando o tracejado*/
+    font-weight: bold;/*negrito*/
+    color: var(--cor4);
+    background-color: var(--cor1);
+    padding: 2px,6px;
+
+}
+main a:hover{
+    /*afeito quando passar o mouse sobre o link*/
+    text-decoration: underline;/*tracejado*/
+    color: var(--cor4);
+
+}
+div.video{
+    /*vamos colocar um fundo para poder identificar*/
+    background-color: var(--cor2);
+    /*/margin-bottom: 30px;/*embaixo do video uma  margem (espacinho)*/
+    margin: 0px -20 30px -20px;/*lateral*/
+    padding: 20px;
+    padding-bottom: 59%;/*este aqui trabalha a tarja preta que fica na lateral do video,ajuste variaa de video para video*/
+    position: relative;
+
+
+}
+div.video > iframe{
+    position: absolute;/*quando se escolhe absolute se pode mexer no : top e left   */
+    top:5% ;/*o top */
+    left:5% ;/*o cantinho*/ /*como se fosse um L*/
+    width: 90%;
+    height:90% ;
+
+
+}
+aside{
+    background-color: var(--cor1); 
+    padding: 10px;/*descolar*/
+    border-radius: 10px;/*arredondar as pontas*/
+    box-shadow: 3px 3px 8px rgb(179, 178, 178);
+
+}
+aside > H3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 5PX;/*VAI ENGORDA crescer*/
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;/*em cima na esquerda 10px em cima na direita 10px 0px em baixo na direita e 0px embaixo na esquerda */
+
+
+}
+aside > ul{
+    /*configurar as bolinhas que estao fora do padrao*//*o normal e outside pelo lado de fora*/
+    list-style-position:inside;/*a posição da BOLINHA pelo lado de fora para o lado de dentro */
+    columns:2;/*colocou a lista em 2 colunas paralelas*//*prestar ATENÇÃO PRA QUANDO ESPREMER nao ficar ZUADO*/
+    Alist-style-type:'\2714\00A0\00a0';/*para importa o simbolo de check do site para nosso site*//*00a0 e o ESPAÇO*/
+
+
+
+
+}
+footer{
+    background-color: var(--cor5);/*fundo*/
+    color: white;/*letra*/
+    text-align: center;/*centralizar*/
+    font-size: 0.8em;/*tamanho da letra*/
+    padding: 5px;
+
+
+}
+footer  a {
+    /*footer > a - Eu nao fiz assim porque tem um paragrafo dentro*/
+    /*mas podia ser feiro assim tambem: - footer > p > a --- todo link que esta dentro de 1 paragrafo*/
+    color: white;/*letra*/
+    font-weight: bold;/*negrito*/
+    text-decoration: none;/*tirar o tracejado*/
+
+}
+footer a:hover{
+    text-decoration: underline;/*ganha a decoraçao*/
+    color: var(--cor1);
+}
+
+

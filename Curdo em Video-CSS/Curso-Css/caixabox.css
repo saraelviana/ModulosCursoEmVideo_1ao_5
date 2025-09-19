@@ -1,0 +1,76 @@
+/* a anotomia da caixa box
+
+1- altura da caixa = height
+2- largura da caixa = width
+3- linha em volta da caixa BORDA =  border 
+4- linha que fica ao redor (acochoamento ou preencheminto ), entre a BORDA e a letra = padding
+5- linha que fica ao redor (externo) BORDA = margin
+** da borda pra dentro PADDING da borda pra fora MARGIN
+6- linha ao redor PADDING (lado de dentro) = outline
+** seria o TRAÇADO ,sublinhado ,so que envolvendo todo os lados
+*/
+/*
+existe caixa do tipo 
+BOX-LEVEL( display:block)
+- Sempre inicia em 1 linha nova
+- <div>, <h1>...<h6>,<p>,<main>,<header>,<nav>,<article>,<aside>,<footer>,<form>,<video>
+
+
+
+INLINE-LEVEL
+- ele nao quebra linha 
+- e adequando a linha
+- <span>,<a>,<code>,<small>,<strong>,<em>,<sup>-<sub>,<label>,<button>,<input>,<select>
+
+
+*/
+h1{ /*h1 por padrao e box-level */
+    /*mas para transforma lo e so: display:inline-- pronto , propriedade aplicada
+    Claro que INLINE nao dar pra mexer altura (height) e largura (width) */
+
+    background-color: rgb(98, 111, 122);/*cor de fundo*/
+    height: 300px;/*altura*/
+    width: 300px;/*largura*/
+
+   /* border-width: 10px;/*borda largura*/
+   /* border-color: darkblue;/*cor da borda */
+   /* border-style: solid;
+    /*vamos para o inspecionar o devtool*/
+
+    /*vamos siplificar*/
+    border: 10px solid darkblue;
+
+   /* padding-top: 10px;/*ao redor (acochoamento ou preencheminto ), entre a BORDA e a letra = padding*/
+    /*padding-right: 10px;/*lado direito*/
+    /*padding-bottom: 10px;/**/
+    /*padding-left: 10px;/*lado esquerdo*/
+    
+    /*vamos simplificar*/
+    padding: 10px 20px;
+    /*e se todos sao iguais (padding: 10px 10px 10px 10px;), basta declarar apenas 1 assim:padding: 10px */
+
+
+    /*margin-top:10px ;/*sempre vamos iniciar configurando sentido o relogio*/
+    /*margin-right: 10px;/*lado direito*/
+    /*margin-bottom: 10px;/*lado debaixo*/
+    /*margin-left: 10px;/*lado esquerdo*/
+    /*margin: auto --- sempre ficara no centro automaticamente*/
+    /*vamos simplificar */
+    margin: 10px auto 20px auto;
+
+   /* outline-width: 5px;/*largura da linha*/
+    /*outline-style: dashed;/**/
+    /*outline-color: chartreuse;*/  
+    outline: 5px dashed chartreuse;
+    
+}
+a{/*este e inline-level... mas basta colocar: display: block--- pronto */
+    border-width: 10px;/*largura da borda*/
+    border-style: solid;/*estylo da borda*/
+    border-color: aqua;/*cor da borda*/
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+}

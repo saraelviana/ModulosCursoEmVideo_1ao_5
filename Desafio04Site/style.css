@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html,body{
+    /*tera as seguintes configuraçoes*/
+     
+    height: 100vh;/*altura total do navegador*/
+    width: 100vw;/*largura total do navegador*/
+    background-color: black;
+
+
+}
+
+body{
+    background: url(imagem/pacote-d013/imagens/fundo-madeira.jpg) no-repeat top center;
+    /*ele colocou o : no-repeat top center -- mas nao precisa,mas deixei*/
+    background-size: cover;/*pra cobrir a tela inteira*/
+    background-attachment: fixed;/*para ele fixar*/
+}
+
+main{
+    /*conteiner de fora estasconfiguraçoes*/
+
+    position: relative;/*para poder organizar a centralização da coisa*/
+    height: 100vh;
+    
+    
+
+
+}
+
+section#telefone{ 
+    /*conteiner de dentro tera estas configuraçoes*/
+
+    position: absolute;/*para poder centralizar*/
+    top: 50%;
+    left: 50%; /*com o top e o left a imagem nao cetraliza, tem que usar os tranform para puxara imagem*/
+    transform: translate(-50%, -50%);/* aqui controla a imagem*/
+
+    height: 627px;
+    width: 311px;/* e mas facil ir pro gimp ver o tamanho */
+    
+    background: url(imagem/pacote-d013/imagens/frame-iphone.png) no-repeat;/*no-repeat=ficara 1 so*/
+    /*se deixara assim:(imagem/pacote-d013/imagens/frame-iphone.png) imagem duplicada*/
+    /*assim : background: blue url(... e pra ver o contraste entre a imagem e o alinhamento dela*/
+
+
+}
+iframe#tela{
+    position: relative;
+    top: ;
+    left: ;
+    
+}
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem</title>
+</head>
+<body>
+    <h1>Imagem</h1>
+    <!-- vai ter que trabalhar as imagens pequena,media,grande -->
+     <!-- tag picture-->
+      <!-- 1 imagem 300 por 300 e 800 po 800-->
+       <!-- 2 imagem 700 po 700 e 800 por 800-->
+        <!-- melhor iniciar pela maxima, se sua imagem tiver menos de 1000px 
+         vou carregar a minha foto Media -->
+
+      <picture>
+        <source media="(max-width:750px )" srcset="imagem/P.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagem/M.png" type="image/png">
+        <img src="imagem/G.png" alt="imagem flexivel">
+        <!-- para funcionar o outro soucer tem que esta acima deste (max-width:1050px)" -->
+         <!-- obs... deixa MAX min-width:750px , se nao, vai carregar a imagem pequene quando a tela estiver grande-->
+          
+         
+        
+        
+        
+      </picture>
+    
+</body>
+</html>

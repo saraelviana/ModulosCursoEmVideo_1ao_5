@@ -1,0 +1,61 @@
+/*SEMPRE USAR O INSPECIONAR PARA VER COMO FICA */
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(153, 152, 152);
+    margin: 0;
+}
+header{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+nav{
+    background-color:rgb(189, 185, 185); ;
+    padding: 3px;
+    box-shadow:1px 1px 1px black ;/*sombra - 1px (desclocamento Vertical) 1px (hozontal) 1px (espalhamento) black (cor) */
+
+}       
+nav > a{
+    text-decoration: none;
+    color: rgb(190, 7, 7);
+    font-weight: bold;
+    margin-right: 30px;
+}
+nav > a:hover{ /*NAV e o ( > )  filho A*/
+    text-decoration: underline;
+}
+main{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px 0px;/*o raio da borda - possui varias opçoes-- posso fazer assim: border-radius: 10px 15px 10px 
+    15px*/
+    box-shadow: 4px 9px 4px rgb(148, 148, 148);
+
+    
+}
+article{
+    background-color: aliceblue;
+    padding: 5px;
+}
+article > aside{
+    background-color: antiquewhite;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 4PX;
+    margin: 0;
+}
+footer > p{
+    margin: 0px;
+}
+div#bola{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 50%;/*posso usar tambem a % em ves de px*/
+    
+}

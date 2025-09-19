@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/*vamos testar
+body{
+background-color:red;
+--- quando der 600px a cor do fundo fica vermelho--
+*/
+header,header > nav {
+    /*em vez de fazer um header em baixo e mas facil deixar assim :header,header*/
+    flex-flow: column nowrap;/*fica coluna do lado esquerdo */
+
+}
+header > h1 {
+    flex-basis: 50px;
+}
+header > nav {
+    width: 90vw;/*o menur vai ficar largo agora*/
+}

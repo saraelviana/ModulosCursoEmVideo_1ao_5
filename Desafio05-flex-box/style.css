@@ -1,0 +1,81 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    background-color: rgb(57, 57, 58);
+    height: 100vh;
+    width: 100vw;
+
+}
+header{
+    background-color: rgb(117, 117, 117);
+    color: white;/*letras*/
+    padding: 10px;/*espaçamento*/
+    display: flex; /*inicia o flex-box*/
+    flex-flow: row wrap;/*ao diminuir a tela o h1 [manutenção] sobe */
+    justify-content: space-between;/*jogar as opçoes pro canto esquerdo da tela*/
+    align-items: center;/* organizou os itens dentro */
+
+
+}
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black;
+    margin: 10px;
+    padding: 10px;
+    
+}
+h1{
+   /* border: 1px dotted black;/*so para ver as delimitações[enxergar]*/
+    flex: 0 0 200px; /*grow (0)[nao vai crescer] - shrink (0)[nao vai encolher]- fixo em 200px */
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.089);
+
+
+
+
+}
+nav{
+   /* border: 1px dotted black;/*so para ver as delimitações[enxergar]*/
+    display: flex;/*conteiner flexivel*/
+    flex-flow: row wrap;/*fica na vertical [column] */
+    justify-content: flex-end;/*sempre grudado no fim [canto]*/
+}
+header > nav > a {
+    background-color: black;
+    color: white;/*cor da letra*/
+    padding: 10px;/*pra ficar mais gordinho*/
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+
+}
+header > nav > a:hover{
+    /*efeito de inverte apenas*/
+    background-color: white;
+    color: black;
+   /* transition: 0.5s;*/
+    transition: background-color .5s;
+    
+}
+h2{
+
+}
+/*
+vamos pra dedução
+Tenho 1 header e ele tem 2 caixas [esta pontilhada,border: 1px dotted black;/*so para ver as delimitações[enxergar]
+h1 - site
+nav - menu [ caixa toda]
+Se pegar o header e fizer como flex box, vai transforma o h1 e header autamente flexiveis,
+o header seria o conteiner [o pai ]
+h1 e nav os itens [ filho]
+- vamos para o header e colocar o display : flex;
+
+
+*/

@@ -1,0 +1,84 @@
+/*CRIAR UM SELETO */
+/*h5*/
+@font-face {
+    font-family:'fontebaixada' ;
+    /* src: url('fonteBaixada/Slabo27px-Regular.ttf') format('truetype'), url('fonteBaixada/Tendang.otf') format('opentype');*/
+    src: url(fonteBaixada/Tendang.otf) format(opentype);
+    
+    /*format()... o formato pode ser 
+    opentype(otf)
+    truetype(ttf)
+    embedded-opentype
+    truetype-aat(apple advance typography
+    svg
+    */
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+/*h1*/
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Slabo+27px&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Workbench&display=swap');
+
+/*h2*/
+@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
+
+
+/*h3*/
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+
+
+/*fonte h4*/
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+
+
+
+
+body{
+
+
+   font-family: Arial, Helvetica, sans-serif;/*TODOS OS DISPOSITIVOS TEM FONT SANS-SERIF todos vao ler*/
+   font-size:16px ;/*tamanho da letra na tela*/
+
+}
+
+h1{
+    font-family: Workbench;
+}
+
+h2{
+
+  font-family: "Splash", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+}
+h3{
+    
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+}
+h4{
+  
+ font-family: "Honk", system-ui;
+ /* font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 50,/*15*/
+   /* "SHLN" 100;/*50*/
+
+}
+h5{
+    font-family: 'fontebaixada','Times New Roman', Times, serif;
+    font-size: 3em;
+    
+
+}
+
+

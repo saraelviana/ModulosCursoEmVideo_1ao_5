@@ -1,0 +1,31 @@
+/*
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Splash&display=swap');
+*/
+/*
+@font-face{
+    font-amaly:'android'; EXEMPLO DE FONTE BAIXADA PARA PC
+    src:('') format('opentype')    ; aqui e so CTRL+ESPAÇO para acessar a pasta da fonte baixada para o projeto
+}
+*/
+
+/*variavel root
+:root 
+tudo que for definido aqui em cima sera para o documento inteiro
+aqui posso criar as variaveis, toda variavel começa com --
+exemplo:
+--cor
+aplicando 
+--cor1:#ffhhg09
+--cor2:#ffgg003
+--fontePadrao: time romana,verdana,arial;
+--fonteExterna:font-family: "Roboto", sans-serif; ; E SO IMPORTA COMO JA SABEMOS
+--fontEspecifica: "nome da fonte baixada pro PC",cursive (caso nao funcione a fonte);
+
+
+body{
+        background-color:var(--cor1); ELE PUXA AUTOMATICAMENTE A VARIVEL QUE VOCE CRIOU
+}
+
+
+
+*/

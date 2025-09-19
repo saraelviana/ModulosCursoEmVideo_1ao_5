@@ -1,0 +1,48 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    color: blue;
+    font-weight: bold;/*em negrito*/
+    /*tirar o sublinhado de todos os links -- text-decoration: none*/
+    text-decoration: none;
+}
+/*agora vamos de pseudo class*/
+a:visited{
+    /*indificar como visitado-- visited*/
+    color: darkred;
+
+}
+a:hover{
+    /*efeito ao passar o mouse por cima do que deseja*/
+    text-decoration: underline; /*aqui ficara sublinhado quando o mouser passar por cima*/
+    background-color: cadetblue;/*optei por uma sombra desta cor em vez das letras petras com color:black;*/
+
+}
+a:active{
+    /*a cor dele ativo no caso*/
+    color: crimson;/*quando clicar no link ele ficara da cor selecionada */
+
+}
+/*agora pseudo elemento*/ 
+/*afeter = depois--- depois de todos os links */ 
+a::after{
+   /* content: "[link]";*/
+    text-decoration: none;/*eu nao quero ele em negrito*/
+    font-weight: normal;
+    color: rgb(102, 101, 101);
+}
+/*vamos mexer um pouco*/
+.especial::after{
+    content: '⍟';
+
+}
+.especial::before{
+    content: '♫';
+}
+/*tudo que estiver na class especial vai ter um antes e um depois*/
+.especial{
+    background-color: darkolivegreen;
+    color: white;
+    
+}

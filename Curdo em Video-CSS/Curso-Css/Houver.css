@@ -1,0 +1,20 @@
+body{
+font-family: 'Times New Roman', Times, serif    ;
+        }
+div > p{
+/*assim :div > p e um paragrafo dentro , que e filho de uma Div  */
+display: none;/*nao mostre nada*/
+
+        }
+div:hover > p{
+/*quando eu passaro mouse no paragrafo que esta detro da div */
+display: block;/* que e para ele mostrat*/
+color: white;/*cor da letra*/
+background-color: red;/*cor de fundo da letra*/
+
+        }
+div:hover{
+color: red;/*passou o mouse fica vermelho*/
+
+
+        }
